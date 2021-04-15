@@ -1,0 +1,30 @@
+// Import global vars
+@import "master";
+@import "fonts";
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+
+  // remove on work
+  // just to make sure css imported
+  color: #fff;
+  background: red;
+}
+.main-content {
+  flex: 1 0 auto;
+}
+.main-footer {
+  flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
+}
