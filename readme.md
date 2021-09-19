@@ -1,2 +1,1 @@
-Simple gulp bundler for static web page building
-Gulp version - 4
+Quiz project for http://vidnoe.elitkitchens.ru/

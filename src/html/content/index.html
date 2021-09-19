@@ -17,10 +17,684 @@
     <!-- contents of html partials will be injected here -->
     <!-- endinject -->
     <main class="main-content">
-      <div class="container">
-        <p>Content</p>
-        <img src="assets/default.jpg" alt="pic" />
-      </div>
+      <section class="main-quiz">
+        <div class="container main-quiz__container">
+          <div class="quiz-form-wrap">
+            <form id="quizForm" action="/" class="quiz-form">
+              <h1 class="quiz-title">Quiz title</h1>
+              <div class="quiz-steps-container">
+                <div class="quiz-steps-wrap">
+                  <div class="quiz-steps__circle">
+                    <svg class="progress-ring" width="120" height="120">
+                      <circle
+                        class="progress-ring__circle"
+                        stroke="white"
+                        stroke-width="4"
+                        fill="transparent"
+                        r="52"
+                        cx="60"
+                        cy="60"
+                      />
+                    </svg>
+                  </div>
+                  <div class="quiz-steps">
+                    <span class="quiz-step__current">1</span>
+                    <span class="quiz-step__separator">/</span>
+                    <span class="quiz-step__total">2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="quiz-tabs">
+                <div
+                  class="quiz-tab quiz-tab--question quiz-tab--radio active"
+                  data-tab="1"
+                >
+                  <h2 class="quiz-subtitle">
+                    1. Какой стиль кухни вам нравится?
+                  </h2>
+                  <div
+                    class="d-flex flex-wrap flex-md-nowrap -mx-2 main-quiz__row"
+                  >
+                    <div class="w-100 w-md-25 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_1"
+                          value="Классика"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Классика</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-25 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_1"
+                          value="Современный стиль"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">
+                                Современный стиль
+                              </div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-25 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_1"
+                          value="Скандинавский стиль"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">
+                                Скандинавский стиль
+                              </div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-25 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_1"
+                          value="Другое"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Другое</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="quiz-tab quiz-tab--question quiz-tab--radio"
+                  data-tab="2"
+                >
+                  <h2 class="quiz-subtitle">2. Какой тип кухни вам нужен?</h2>
+                  <div
+                    class="d-flex flex-wrap flex-md-nowrap -mx-2 main-quiz__row"
+                  >
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_2"
+                          value="Прямая"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Прямая</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_2"
+                          value="Угловая"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Угловая</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_2"
+                          value="П-образная"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">П-образная</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_2"
+                          value="С островом"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">С островом</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_2"
+                          value="Другое"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Другое</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="quiz-tab quiz-tab--question quiz-tab--radio"
+                  data-tab="3"
+                >
+                  <h2 class="quiz-subtitle">
+                    3. Выберите материал для фасадов
+                  </h2>
+                  <div
+                    class="d-flex flex-wrap flex-md-nowrap -mx-2 main-quiz__row"
+                  >
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_3"
+                          value="Шпон"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Шпон</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_3"
+                          value="Массив дерева"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Массив дерева</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_3"
+                          value="Пластик"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Пластик</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_3"
+                          value="Эмаль"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Эмаль</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_3"
+                          value="Другое"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Другое</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="quiz-tab quiz-tab--question quiz-tab--radio"
+                  data-tab="4"
+                >
+                  <h2 class="quiz-subtitle">
+                    4. Какая цветовая палитра вам нравится?
+                  </h2>
+                  <div
+                    class="d-flex flex-wrap flex-md-nowrap -mx-2 main-quiz__row"
+                  >
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_4"
+                          value="Белая"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Белая</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_4"
+                          value="Светлая"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Светлая</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_4"
+                          value="Темная"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__image-wrap">
+                              <img
+                                src="assets/default.jpg"
+                                alt="img"
+                                class="quiz-card__image"
+                              />
+                            </div>
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Темная</div>
+                            </div>
+                          </button>
+                          <div class="quiz-card__link-wrap">
+                            <a href="#" class="quiz-card__link">
+                              Смотреть в каталоге
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_4"
+                          value="Цветная"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Цветная</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 w-md-20 px-2">
+                      <div class="quiz-card-wrap">
+                        <input
+                          type="radio"
+                          class="quiz-radio"
+                          name="question_4"
+                          value="Другое"
+                        />
+                        <div class="quiz-card">
+                          <button type="button" class="quiz-card__button">
+                            <div class="quiz-card__title-wrap">
+                              <div class="quiz-card__title">Другое</div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="quiz-tab quiz-tab--question quiz-tab--range"
+                  data-tab="5"
+                >
+                  <h2 class="quiz-subtitle">
+                    5. Какую сумму планируете потратить на кухню?
+                  </h2>
+                  <div class="d-flex -mx-2 main-quiz__row">
+                    <div class="w-100 px-2">
+                      <div class="quiz-range-wrap">
+                        <input
+                          type="range"
+                          class="quiz-range"
+                          name="price"
+                          min="50000"
+                          max="400000"
+                          step="1000"
+                        />
+                        <div class="quiz-range__value">
+                          <span class="quiz-range__value-text">5 000</span>
+                          <span class="quiz-range__value-symbol">₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="quiz-tab quiz-tab--question quiz-tab--range"
+                  data-tab="6"
+                >
+                  <h2 class="quiz-subtitle">
+                    6. Готово! Введите ваше имя и телефон.
+                  </h2>
+                  <div class="d-flex -mx-2 main-quiz__row">
+                    <div class="w-100 px-2">
+                      <div class="quiz-input-wrap">
+                        <label>Введите ваше имя</label>
+                        <input
+                          type="text"
+                          class="quiz-input"
+                          name="name"
+                          placeholder="Имя"
+                          autocomplete="name"
+                          required
+                        />
+                      </div>
+                      <div class="quiz-input-wrap">
+                        <label>Введите ваш номер телефона</label>
+                        <input
+                          type="tel"
+                          class="quiz-input"
+                          name="phone"
+                          placeholder="Телефон"
+                          autocomplete="tel"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quiz-controls">
+                <button
+                  id="quizBack"
+                  type="button"
+                  class="quiz-control quiz-control--arow"
+                  disabled
+                >
+                  <i class="quiz-icon-back"></i>
+                </button>
+                <button id="quizForward" type="button" class="quiz-control">
+                  Далее
+                </button>
+                <button
+                  id="quizSubmit"
+                  type="submit"
+                  class="quiz-control d-none"
+                >
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="quiz-result d-none">
+            <div class="quiz-result__image-wrap">
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 490.05 490.05"
+                style="enable-background: new 0 0 490.05 490.05"
+                xml:space="preserve"
+                fill="#28af14"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M418.275,418.275c95.7-95.7,95.7-250.8,0-346.5s-250.8-95.7-346.5,0s-95.7,250.8,0,346.5S322.675,513.975,418.275,418.275
+			z M157.175,207.575l55.1,55.1l120.7-120.6l42.7,42.7l-120.6,120.6l-42.8,42.7l-42.7-42.7l-55.1-55.1L157.175,207.575z"
+                    />
+                  </g>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+            </div>
+            <h2>Отлично!</h2>
+            <p>Мы с вами свяжемся в ближайшее время</p>
+            <div>
+              <button id="quizRepeat" type="button" class="quiz-control">
+                Повторить
+              </button>
+              <a href="/" id="quizHome" class="quiz-control"> Домой </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- inject:footer:html -->
     <!-- contents of html partials will be injected here -->
